@@ -82,6 +82,9 @@ public class Main {
     public static double division(double a, double b) {
         return a / b;
     }
+    public static double puissance(double a, double b) {
+        return Math.pow(a, b);
+    }
 
 
 }
