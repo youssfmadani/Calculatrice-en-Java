@@ -79,5 +79,9 @@ public class Main {
     public static double multiplication(double a, double b) {
         return a * b;
     }
+    public static double division(double a, double b) {
+        return a / b;
+    }
+
 
 }
