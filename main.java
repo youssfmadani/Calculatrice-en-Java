@@ -72,4 +72,8 @@ public class Main {
     public static double addition(double a, double b) {
         return a + b;
     }
+    public static double soustraction(double a, double b) {
+        return a - b;
+    }
+
 }
