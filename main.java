@@ -99,7 +99,11 @@ public class Main {
         return fact;
     }
 
-   
+    public static double saisirNombre() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Entrez un nombre : ");
+        return scanner.nextDouble();
+    }
 
 
 
