@@ -85,6 +85,10 @@ public class Main {
     public static double puissance(double a, double b) {
         return Math.pow(a, b);
     }
+    public static double racineCarree(double a) {
+        return Math.sqrt(a);
+    }
+
 
 
 }
