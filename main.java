@@ -19,6 +19,55 @@ public class Main {
             System.out.print("Choisissez une opération : ");
             int choix = scanner.nextInt();
 
+            switch (choix) {
+                case 1: // Addition
+                    System.out.println("Résultat : " + addition(saisirNombre(), saisirNombre()));
+                    break;
+                case 2: // Soustraction
+                    System.out.println("Résultat : " + soustraction(saisirNombre(), saisirNombre()));
+                    break;
+                case 3: // Multiplication
+                    System.out.println("Résultat : " + multiplication(saisirNombre(), saisirNombre()));
+                    break;
+                case 4: // Division
+                    double denominateur = saisirNombre();
+                    if (denominateur == 0) {
+                        System.out.println("Erreur : Division par zéro !");
+                    } else {
+                        System.out.println("Résultat : " + division(saisirNombre(), denominateur));
+                    }
+                    break;
+                case 5: // Puissance
+                    System.out.print("Entrez le nombre de puissance  : ");
+                    double puiss = scanner.nextInt();
+                    System.out.println("Résultat : " + puissance(saisirNombre(), puiss));
+                    break;
+                case 6: // Racine carrée
+                    double nombre = saisirNombre();
+                    if (nombre < 0) {
+                        System.out.println("Erreur : Impossible de calculer la racine carrée d'un nombre négatif !");
+                    } else {
+                        System.out.println("Résultat : " + racineCarree(nombre));
+                    }
+                    break;
+                case 7: // Factorielle
+                    int entier = (int) saisirNombre();
+                    if (entier < 0) {
+                        System.out.println("Erreur : La factorielle d'un nombre négatif n'existe pas !");
+                    } else {
+                        System.out.println("Résultat : " + factorielle(entier));
+                    }
+                    break;
+                case 8: // Quitter
+                    continuer = false;
+                    System.out.println("Merci d'avoir utilisé la calculatrice !");
+                    break;
+                default:
+                    System.out.println("Erreur : Choix invalide !");
+            }
+        }
+        scanner.close();
+
 
 
 
